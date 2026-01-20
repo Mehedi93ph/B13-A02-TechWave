@@ -1,0 +1,70 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Inter", sans-serif;
+}
+
+/* Body background */
+body {
+    background: #0b0217;
+    padding: 20px;
+}
+
+/* Navbar */
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 18px 40px;
+    background: linear-gradient(90deg, #1a0833, #2b0b45);
+    border-radius: 16px;
+}
+
+/* Logo */
+.logo {
+    font-size: 28px;
+    font-weight: 700;
+    color: #ffffff;
+}
+
+.logo span {
+    color: #ff4fd8;
+}
+
+/* Navigation */
+.nav-links {
+    display: flex;
+    gap: 32px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #e6e6e6;
+    font-size: 16px;
+    transition: opacity 0.2s ease;
+}
+
+.nav-links a:hover {
+    opacity: 0.7;
+}
+
+/* Gradient Button */
+.btn-subscribe {
+    text-decoration: none;
+    padding: 12px 26px;
+    font-weight: 600;
+    color: #fff;
+    border-radius: 999px;
+    background: linear-gradient(135deg, #ffcc00, #ff4fd8);
+    box-shadow: 0 8px 24px rgba(255, 79, 216, 0.35);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.btn-subscribe:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 12px 32px rgba(255, 79, 216, 0.5);
+}
