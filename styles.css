@@ -62,7 +62,8 @@
 
 /* Gradient Button */
 
-.btn-subscribe {
+.btn-subscribe,
+.btn-1 {
     padding: 12px 26px;
     font-weight: 600;
     border-radius: 100px;
@@ -72,12 +73,116 @@
     border: none;
 }
 
+.btn-1:hover {
+    transform: translateY(-1px);
+    box-shadow: 0 12px 32px rgba(255, 79, 216, 0.5);
+}
+
 .btn-subscribe:hover {
     transform: translateY(-1px);
     box-shadow: 0 12px 32px rgba(255, 79, 216, 0.5);
 }
 
-.btn-subscribe a{
+.btn-subscribe a {
     text-decoration: none;
     color: #FFFFFF;
+}
+
+/* Banner Section */
+
+.banner-container {
+    background-image: url(./assets/hero-bg.png);
+    width: 1600px;
+    height: 760px;
+}
+
+.banner-container .hero-circle-container {
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    align-items: center;
+    justify-self: center;
+}
+
+.banner-container .hero-circle-container .circle {
+    margin: 93px 625px 40px;
+    position: relative;
+}
+
+.banner-container .hero-circle-container .microphone {
+    position: absolute;
+    right: 46%;
+    top: 30%;
+}
+
+.banner-container .hero-circle-container .hero-circle-img>h4 {
+    padding: 8px 16px;
+    color: rgba(26, 11, 46, 1);
+    font-size: 18px;
+    font-weight: 600;
+    text-transform: capitalize;
+    width: 75px;
+    height: 38px;
+    border-radius: 1000px;
+    box-shadow: 0px 3px 27px 0px rgba(0, 255, 136, 0.5);
+    background: rgba(0, 255, 136, 1);
+}
+
+.new-toltip {
+    position: absolute;
+    right: 40%;
+    top: 25%;
+}
+
+.banner-title {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+    width: 550px;
+    height: 170px;
+}
+
+.banner-title>h1 {
+    color: rgba(255, 255, 255, 1);
+    font-size: 3.8rem;
+    font-weight: 800;
+    text-transform: capitalize;
+}
+
+.banner-title>p {
+    font-size: 16px;
+    font-weight: 400;
+    color: rgba(255, 255, 255, 1);
+}
+
+.banner-title .banner-button-container {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+}
+
+.btn-1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    color: rgba(255, 255, 255, 1);
+    font-size: 1rem;
+    font-weight: 600;
+    text-transform: capitalize;
+}
+
+.btn-2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    padding: 12px 20px;
+    color: #00FF88;
+    border: 1px solid #00FF88;
+    border-radius: 10000px;
+    background-color: transparent;
 }
